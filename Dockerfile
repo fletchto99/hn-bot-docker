@@ -9,4 +9,4 @@ RUN (cd /setup; sh install.sh)
 WORKDIR /bot
 
 # Start the server
-CMD ["/bin/sh", "/bot/bootstrap.sh"]
+CMD ["sh", "/bot/bootstrap.sh"]
