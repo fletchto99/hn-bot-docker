@@ -11,5 +11,7 @@ RUN rm -rf /setup
 # Set the work directory to blog
 WORKDIR /bot
 
+RUN ln -sf /proc/1/fd/1 /var/log/cron.log
+
 # Start the server
-CMD ["/bin/sh", "/bot/bootstrap.sh"]
+CMD /bin/sh /bot/bootstrap.sh

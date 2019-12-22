@@ -31,4 +31,4 @@ echo "password=${praw_password}" >> /bot/praw.ini
 echo "username=${praw_username}" >> /bot/praw.ini
 
 echo "Starting the bot"
-python3 hn_bot
+/usr/sbin/crond -f
