@@ -12,3 +12,5 @@ git clone "https://github.com/qznc/hn_bot.git" /bot
 
 # Install the bot's requirements
 pip install -r "/bot/requirements.txt"
+
+cp bootstrap.sh /bot/bootstrap.sh
