@@ -12,9 +12,11 @@ apk add --no-cache git
 echo "Cloning repo"
 git clone "https://github.com/qznc/hn_bot.git" /bot
 
+echo "Copying bootstrap file"
+cp -v /setup/bootstrap.sh /bot/bootstrap.sh
+
 # Install the bot's requirements
 echo "Installing pip requirements"
 pip install -r "/bot/requirements.txt"
 
-echo "Copying bootstrap file"
-cp -v /setup/bootstrap.sh /bot/bootstrap.sh
+
