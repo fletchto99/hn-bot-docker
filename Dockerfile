@@ -5,6 +5,9 @@ COPY setup /setup
 # Install requirements
 RUN (cd /setup; sh install.sh)
 
+# Cleanup setup files
+RUN rm -rf /setup
+
 # Set the work directory to blog
 WORKDIR /bot
 

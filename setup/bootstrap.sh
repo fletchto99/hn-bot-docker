@@ -1,3 +1,5 @@
+set -e
+
 # Ensure all vars are set
 if [[ -z "${praw_username}" ]]; then
   echo "Missing praw_username"
@@ -19,4 +21,5 @@ if [[ -z "${praw_client_secret}" ]]; then
   exit 1
 fi
 
+echo "Starting the bot"
 python3 hn_bot
