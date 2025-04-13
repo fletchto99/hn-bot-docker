@@ -1,3 +1,7 @@
+**Archived**
+
+This repo has been archived in favor of a github action. Please see https://github.com/joshryandavis/hnbot for more information.
+
 # HN Bot
 
 This is a containerized version of the qznc's [hackernews bot](https://github.com/qznc/hn_bot) used to post to [/r/hackernews](https://reddit.com/r/hackernews). The bot runs in a cron job every hour.
